@@ -1,0 +1,54 @@
+{
+"Restaurant": [
+    {
+        "restaurantId": "REST001",
+        "name": "Spice Garden",
+        "location": "Coimbatore, TN"
+    },
+    {
+        "restaurantId": "REST002",
+        "name": "Tandoori Treats",
+        "location": "Chennai, TN"
+    },
+    {
+        "restaurantId": "REST003",
+        "name": "Biryani Junction",
+        "location": "Hyderabad, TS"
+    },
+    {
+        "restaurantId": "REST004",
+        "name": "Wok & Roll",
+        "location": "Bengaluru, KA"
+    },
+    {
+        "restaurantId": "REST005",
+        "name": "South Spice",
+        "location": "Madurai, TN"
+    },
+    {
+        "restaurantId": "REST006",
+        "name": "Burger Hub",
+        "location": "Mumbai, MH"
+    },
+    {
+        "restaurantId": "REST007",
+        "name": "Curry & Crust",
+        "location": "Delhi, DL"
+    },
+    {
+        "restaurantId": "REST008",
+        "name": "The Dosa Factory",
+        "location": "Kochi, KL"
+    },
+    {
+        "restaurantId": "REST009",
+        "name": "Punjabi Zaika",
+        "location": "Amritsar, PB"
+    },
+    {
+        "restaurantId": "REST010",
+        "name": "Urban Tandoor",
+        "location": "Pune, MH"
+    }
+]
+}

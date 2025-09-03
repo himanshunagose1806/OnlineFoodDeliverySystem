@@ -5,8 +5,11 @@ import { MenuComponent } from './menu/menu.component';
 import { OrderComponent } from './order/order.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { PaymentComponent } from './payment/payment.component';
+import { HomeComponent } from './home/home.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
+  {path : 'home', component:HomeComponent},
   {path : 'customer', component:CustomerComponent},
   {path : 'menu', component:MenuComponent},
   {path : 'order', component:OrderComponent},

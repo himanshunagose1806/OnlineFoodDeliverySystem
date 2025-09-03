@@ -1,1 +1,185 @@
-<p>delivery works!</p>
+<!--
+<div class="container my-4 main-container">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between shadow-sm px-3 py-2 rounded">
+            <div class="d-flex align-items-center">
+                <img src="logo.png" alt="Logo" width="40" height="40" class="me-2">
+                <span class="navbar-brand mb-0 h1">FoodExpress Admin</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <a href="/admin-profile" class="me-3">
+                    <img src="profile.png" alt="Admin Profile" width="35" height="35" class="rounded-circle border">
+                </a>
+                <a href="/home" class="btn btn-outline-secondary">Back</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-4">
+        <h3 class="mb-3 text-primary">Agent Assignment</h3>
+        <table class="table table-bordered table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Agent ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                    <th>Current Order ID</th>
+                    <th>Estimated Time</th>
+                    <th>Action</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of deliveryList">
+                    <td> {{d.agentId}} </td>
+                    <td> {{d.name}} </td>
+                    <td> {{d.phone}} </td>
+                    <td> {{d.status}} </td>
+                    <td> {{d.currentOrderId}} </td>
+                    <td> {{d.eta}} </td>
+                    <td><button class="btn btn-primary btn-sm">Assign</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer class="mt-5 text-center text-muted">
+        <hr>
+        <p>&copy; 2025 FoodExpress Admin Panel. All rights reserved.</p>
+        <small>Built with ❤️ using Bootstrap 5</small>
+    </footer>
+
+</div>
+
+-->
+
+
+<!--
+eclipse elite
+Night Rider
+-->
+
+
+<!--
+a main container : 
+    inside this main container there is a header, section and a footer.
+    in header we have a navbar which consists of a brand logo and brand name on the left side of the navbar, 
+    on the right side we have a profile logo which redirect the admin to the admin profile,
+    and a back button which will navigate the admin to the home page or landing page of the food delivery system.
+
+    in the section we have one title name : Agent Assignment
+    in that i have to display some details like : 
+    AgentId     Agent name      status              ETA             and Action
+eg. AG001       Ravi Kumar      available           10min           Assign button visible
+    AG004       Sneha Joshi     Out for delivery    45min           Assign button disable (as the status is not available.)
+
+    add footer section by your own.
+
+    use bootstrap inbuilt classess as much as you can, and don't make it too much complicated.
+-->
+
+
+<!-- <div class="container-fluid bg-light">
+    <div class="container">
+        <nav class="navbar navbar-light" style="background-color: #ff8b8be3;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Brand logo" height="40" class="d-inline-block align-text-top">
+                    FoodieDelivery
+                </a>
+            </div>
+        </nav>
+    </div>
+</div> -->
+
+
+<div class="container mt-5">
+
+    
+    <div class="back-button-container">
+        <button class="btn btn-secondary" (click)="goBack()">← Back to Home</button>
+    </div>
+    
+    <h2 class="text-center mb-4">🚚 Delivery Agent Assignment</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Agent ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                    <th>Current Order ID</th>
+                    <th>ETA</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let agent of agents" [ngClass]="{'table-success': agent.status === 'available'}">
+                    <td>{{ agent.agentId }}</td>
+                    <td>{{ agent.name }}</td>
+                    <td>{{ agent.phone }}</td>
+                    <td>
+                        <span class="badge" [ngClass]="{
+                    'bg-success': agent.status === 'available',
+                    'bg-warning text-dark': agent.status === 'on the way',
+                    'bg-danger': agent.status === 'out of delivery'
+                }">
+                            {{ agent.status }}
+                        </span>
+                    </td>
+                    <td>{{ agent.currentOrderId || '—' }}</td>
+                    <td>{{ agent.eta }}</td>
+                    <td>
+                        <button *ngIf="agent.status === 'available'" class="btn btn-primary btn-sm"
+                            (click)="assignAgent(agent.agentId)">
+                            Assign
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!--
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="biryani.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="burger.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="paneer roll.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pav bhaji.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pizza.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="veg thali.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+-->

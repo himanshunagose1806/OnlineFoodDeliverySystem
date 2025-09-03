@@ -1,0 +1,94 @@
+{
+	"Payment": [
+    {
+		"paymentId": "PAY001",
+		"orderId": "ORD1001",
+		"customerId": "CUST001",
+		"amount": 299.99,
+		"paymentMethod": "Credit Card",
+		"paymentStatus": "Completed",
+		"timestamp": "2025-09-02T15:45:00"
+    },
+    {
+		"paymentId": "PAY002",
+		"orderId": "ORD1002",
+		"customerId": "CUST002",
+		"amount": 149.50,
+		"paymentMethod": "UPI",
+		"paymentStatus": "Completed",
+		"timestamp": "2025-09-02T16:00:00"
+    },
+	{
+		"paymentId": "PAY003",
+		"orderId": "ORD1003",
+		"customerId": "CUST003",
+		"amount": 89.00,
+		"paymentMethod": "Cash on Delivery",
+		"paymentStatus": "Pending",
+		"timestamp": "2025-09-02T16:15:00"
+    },
+	{
+		"paymentId": "PAY004",
+		"orderId": "ORD1004",
+		"customerId": "CUST004",
+		"amount": 499.75,
+		"paymentMethod": "Debit Card",
+		"paymentStatus": "Completed",
+		"timestamp": "2025-09-02T16:30:00"
+    },
+	{
+		"paymentId": "PAY005",
+		"orderId": "ORD1005",
+		"customerId": "CUST005",
+		"amount": 250.00,
+		"paymentMethod": "Net Banking",
+		"paymentStatus": "Failed",
+		"timestamp": "2025-09-02T16:45:00"
+    },
+    {
+		"paymentId": "PAY006",
+		"orderId": "ORD1006",
+		"customerId": "CUST006",
+		"amount": 120.25,
+		"paymentMethod": "UPI",
+		"paymentStatus": "Completed",
+		"timestamp": "2025-09-02T17:00:00"
+	},
+    {
+		"paymentId": "PAY007",
+		"orderId": "ORD1007",
+		"customerId": "CUST007",
+		"amount": 320.40,
+		"paymentMethod": "Credit Card",
+		"paymentStatus": "Completed",
+		"timestamp": "2025-09-02T17:05:00"
+    },
+    {
+		"paymentId": "PAY008",
+		"orderId": "ORD1008",
+		"customerId": "CUST008",
+		"amount": 75.00,
+		"paymentMethod": "Cash on Delivery",
+		"paymentStatus": "Pending",
+		"timestamp": "2025-09-02T17:10:00"
+    },
+	{
+		"paymentId": "PAY009",
+		"orderId": "ORD1009",
+		"customerId": "CUST009",
+		"amount": 180.80,
+		"paymentMethod": "Debit Card",
+		"paymentStatus": "Completed",
+		"timestamp": "2025-09-02T17:15:00"
+    },
+	{
+		"paymentId": "PAY010",
+		"orderId": "ORD1010",
+		"customerId": "CUST010",
+		"amount": 210.00,
+		"paymentMethod": "Net Banking",
+		"paymentStatus": "Completed",
+		"timestamp": "2025-09-02T17:20:00"
+    }
+]
+}
