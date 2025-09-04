@@ -1,0 +1,52 @@
+{
+    "RMenu04": [
+        {
+            "restaurantId": "REST004",
+            "itemid": "ITEM301",
+            "itemName": "Chicken Tacos",
+            "description": "Soft corn tortillas filled with grilled chicken, lettuce, and salsa",
+            "price": 140.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST004",
+            "itemid": "ITEM302",
+            "itemName": "Beef Burrito",
+            "description": "Flour tortilla stuffed with seasoned beef, rice, beans, and cheese",
+            "price": 180.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST004",
+            "itemid": "ITEM303",
+            "itemName": "Veg Quesadilla",
+            "description": "Grilled tortilla filled with melted cheese and sautéed vegetables",
+            "price": 130.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST004",
+            "itemid": "ITEM304",
+            "itemName": "Nachos Supreme",
+            "description": "Crispy nachos topped with cheese, jalapeños, beans, and sour cream",
+            "price": 150.00,
+            "availability": false
+        },
+        {
+            "restaurantId": "REST004",
+            "itemid": "ITEM305",
+            "itemName": "Guacamole Dip",
+            "description": "Fresh avocado dip with lime, onion, and cilantro",
+            "price": 90.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST004",
+            "itemid": "ITEM306",
+            "itemName": "Churros",
+            "description": "Fried dough pastries dusted with cinnamon sugar, served with chocolate sauce",
+            "price": 110.00,
+            "availability": true
+        }
+    ]
+}

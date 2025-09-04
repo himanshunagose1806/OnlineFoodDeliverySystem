@@ -1,0 +1,52 @@
+{
+    "RMenu03": [
+        {
+            "restaurantId": "REST003",
+            "itemid": "ITEM201",
+            "itemName": "Veg Hakka Noodles",
+            "description": "Stir-fried noodles with mixed vegetables and soy sauce",
+            "price": 120.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST003",
+            "itemid": "ITEM202",
+            "itemName": "Chicken Manchurian",
+            "description": "Crispy chicken balls in spicy garlic-soy gravy",
+            "price": 180.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST003",
+            "itemid": "ITEM203",
+            "itemName": "Spring Rolls",
+            "description": "Deep-fried rolls stuffed with veggies and noodles",
+            "price": 90.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST003",
+            "itemid": "ITEM204",
+            "itemName": "Schezwan Fried Rice",
+            "description": "Spicy rice tossed with vegetables and Schezwan sauce",
+            "price": 130.00,
+            "availability": false
+        },
+        {
+            "restaurantId": "REST003",
+            "itemid": "ITEM205",
+            "itemName": "Hot and Sour Soup",
+            "description": "Tangy soup with mushrooms, tofu, and chili oil",
+            "price": 70.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST003",
+            "itemid": "ITEM206",
+            "itemName": "Chili Paneer",
+            "description": "Paneer cubes tossed in spicy chili sauce with peppers",
+            "price": 160.00,
+            "availability": true
+        }
+    ]
+}

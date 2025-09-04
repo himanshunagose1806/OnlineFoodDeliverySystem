@@ -1,0 +1,52 @@
+{
+    "RMenu05": [
+        {
+            "restaurantId": "REST005",
+            "itemid": "ITEM401",
+            "itemName": "Red Velvet Cake Slice",
+            "description": "Moist red velvet sponge with cream cheese frosting",
+            "price": 120.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST005",
+            "itemid": "ITEM402",
+            "itemName": "Blueberry Cheesecake",
+            "description": "Creamy cheesecake topped with fresh blueberry compote",
+            "price": 150.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST005",
+            "itemid": "ITEM403",
+            "itemName": "Chocolate Lava Cake",
+            "description": "Warm chocolate cake with a gooey molten center",
+            "price": 130.00,
+            "availability": false
+        },
+        {
+            "restaurantId": "REST005",
+            "itemid": "ITEM404",
+            "itemName": "Strawberry Milkshake",
+            "description": "Chilled milkshake blended with strawberries and ice cream",
+            "price": 90.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST005",
+            "itemid": "ITEM405",
+            "itemName": "Classic Tiramisu",
+            "description": "Italian dessert with coffee-soaked ladyfingers and mascarpone",
+            "price": 160.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST005",
+            "itemid": "ITEM406",
+            "itemName": "Iced Mocha",
+            "description": "Cold coffee with chocolate syrup and whipped cream",
+            "price": 85.00,
+            "availability": true
+        }
+    ]
+}

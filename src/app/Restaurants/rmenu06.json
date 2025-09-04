@@ -1,0 +1,52 @@
+{
+    "RMenu06": [
+        {
+            "restaurantId": "REST006",
+            "itemid": "ITEM501",
+            "itemName": "Butter Chicken",
+            "description": "Tender chicken cooked in creamy tomato gravy with butter and spices",
+            "price": 220.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST006",
+            "itemid": "ITEM502",
+            "itemName": "Paneer Tikka Masala",
+            "description": "Grilled paneer cubes in rich onion-tomato masala",
+            "price": 190.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST006",
+            "itemid": "ITEM503",
+            "itemName": "Dal Makhani",
+            "description": "Slow-cooked black lentils in buttery gravy with cream",
+            "price": 160.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST006",
+            "itemid": "ITEM504",
+            "itemName": "Garlic Naan",
+            "description": "Soft leavened bread topped with garlic and coriander",
+            "price": 45.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST006",
+            "itemid": "ITEM505",
+            "itemName": "Jeera Rice",
+            "description": "Fragrant basmati rice tempered with cumin seeds",
+            "price": 70.00,
+            "availability": false
+        },
+        {
+            "restaurantId": "REST006",
+            "itemid": "ITEM506",
+            "itemName": "Gulab Jamun",
+            "description": "Sweet milk dumplings soaked in rose-flavored sugar syrup",
+            "price": 60.00,
+            "availability": true
+        }
+    ]
+}

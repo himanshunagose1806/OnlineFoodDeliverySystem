@@ -1,0 +1,52 @@
+{
+    "RMenu02": [
+        {
+            "restaurantId": "REST002",
+            "itemid": "ITEM101",
+            "itemName": "Idli Sambar",
+            "description": "Steamed rice cakes served with spicy sambar and coconut chutney",
+            "price": 60.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST002",
+            "itemid": "ITEM102",
+            "itemName": "Masala Dosa",
+            "description": "Crispy dosa filled with spiced potato masala, served with chutneys",
+            "price": 90.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST002",
+            "itemid": "ITEM103",
+            "itemName": "Medu Vada",
+            "description": "Deep-fried lentil donuts served with sambar and chutney",
+            "price": 50.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST002",
+            "itemid": "ITEM104",
+            "itemName": "Upma",
+            "description": "Savory semolina porridge with vegetables and mustard seeds",
+            "price": 55.00,
+            "availability": false
+        },
+        {
+            "restaurantId": "REST002",
+            "itemid": "ITEM105",
+            "itemName": "Pongal",
+            "description": "Warm rice and lentil dish seasoned with pepper and ghee",
+            "price": 70.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST002",
+            "itemid": "ITEM106",
+            "itemName": "Filter Coffee",
+            "description": "Traditional South Indian coffee brewed with chicory and milk",
+            "price": 35.00,
+            "availability": true
+        }
+    ]
+}

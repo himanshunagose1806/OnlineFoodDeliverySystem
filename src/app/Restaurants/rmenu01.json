@@ -1,0 +1,52 @@
+{
+    "RMenu01": [
+        {
+            "restaurantId": "REST001",
+            "itemid": "ITEM001",
+            "itemName": "Margherita Pizza",
+            "description": "Classic cheese pizza with tomato sauce and basil",
+            "price": 249.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST001",
+            "itemid": "ITEM002",
+            "itemName": "Farmhouse Pizza",
+            "description": "Loaded with onions, capsicum, mushrooms, and tomatoes",
+            "price": 299.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST001",
+            "itemid": "ITEM003",
+            "itemName": "Veggie Burger",
+            "description": "Grilled veggie patty with lettuce, tomato, and mayo",
+            "price": 179.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST001",
+            "itemid": "ITEM004",
+            "itemName": "French Fries",
+            "description": "Crispy golden fries served with ketchup",
+            "price": 99.00,
+            "availability": true
+        },
+        {
+            "restaurantId": "REST001",
+            "itemid": "ITEM005",
+            "itemName": "Chocolate Brownie",
+            "description": "Rich chocolate brownie with a gooey center",
+            "price": 149.00,
+            "availability": false
+        },
+        {
+            "restaurantId": "REST001",
+            "itemid": "ITEM006",
+            "itemName": "Cold Coffee",
+            "description": "Chilled coffee blended with milk and ice cream",
+            "price": 129.00,
+            "availability": true
+        }
+    ]
+}
