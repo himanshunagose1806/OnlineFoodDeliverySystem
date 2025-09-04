@@ -1,3 +1,165 @@
+<div class="container my-5 p-4 bg-white rounded shadow">
+    <div class="mb-3">
+        <button class="btn btn-secondary" (click)="goBack()">← Back to Home</button>
+    </div>
+
+    <h2 class="text-center mb-4 fw-bold">🚚 Delivery Agent Assignment</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Agent ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                    <th>Current Order ID</th>
+                    <th>ETA</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let agent of agents" [ngClass]="{'table-success': agent.status === 'available'}">
+                    <td>{{ agent.agentId }}</td>
+                    <td>{{ agent.name }}</td>
+                    <td>{{ agent.phone }}</td>
+                    <td>
+                        <span class="badge" [ngClass]="{
+                'bg-success': agent.status === 'available',
+                'bg-warning text-dark': agent.status === 'on the way',
+                'bg-danger': agent.status === 'out of delivery'
+                }">
+                            {{ agent.status }}
+                        </span>
+                    </td>
+                    <td>{{ agent.currentOrderId || '—' }}</td>
+                    <td>{{ agent.eta }}</td>
+                    <td>
+                        <button *ngIf="agent.status === 'available'" class="btn btn-primary btn-sm"
+                            >
+                            Assign
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="mt-5 text-center text-muted">
+        <hr>
+        <p>&copy; 2025 QuickBite Admin Panel. All rights reserved.</p>
+        <small>Built with ❤️ using Bootstrap 5</small>
+    </footer>
+</div>
+
+
+
+
+<!-- (click)="assignAgent(agent.agentId)" -->
+
+
+
+
+
+
+
+
+<!-- <div class="container mt-5">
+    
+    <div class="back-button-container">
+        <button class="btn btn-secondary" (click)="goBack()">← Back to Home</button>
+    </div>
+    
+    <h2 class="text-center mb-4">🚚 Delivery Agent Assignment</h2>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Agent ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                    <th>Current Order ID</th>
+                    <th>ETA</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let agent of agents" [ngClass]="{'table-success': agent.status === 'available'}">
+                    <td>{{ agent.agentId }}</td>
+                    <td>{{ agent.name }}</td>
+                    <td>{{ agent.phone }}</td>
+                    <td>
+                        <span class="badge" [ngClass]="{
+                    'bg-success': agent.status === 'available',
+                    'bg-warning text-dark': agent.status === 'on the way',
+                    'bg-danger': agent.status === 'out of delivery'
+                }">
+                            {{ agent.status }}
+                        </span>
+                    </td>
+                    <td>{{ agent.currentOrderId || '—' }}</td>
+                    <td>{{ agent.eta }}</td>
+                    <td>
+                        <button *ngIf="agent.status == 'available'" class="btn btn-primary btn-sm" (click)="assignAgent(agent.agentId)">
+                            Assign
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
 <div class="container my-4 main-container">
 
@@ -94,55 +256,8 @@ eg. AG001       Ravi Kumar      available           10min           Assign butto
 </div> -->
 
 
-<div class="container mt-5">
 
-    
-    <div class="back-button-container">
-        <button class="btn btn-secondary" (click)="goBack()">← Back to Home</button>
-    </div>
-    
-    <h2 class="text-center mb-4">🚚 Delivery Agent Assignment</h2>
 
-    <div class="table-responsive">
-        <table class="table table-bordered table-hover table-striped align-middle">
-            <thead class="table-dark">
-                <tr>
-                    <th>Agent ID</th>
-                    <th>Name</th>
-                    <th>Phone Number</th>
-                    <th>Status</th>
-                    <th>Current Order ID</th>
-                    <th>ETA</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let agent of agents" [ngClass]="{'table-success': agent.status === 'available'}">
-                    <td>{{ agent.agentId }}</td>
-                    <td>{{ agent.name }}</td>
-                    <td>{{ agent.phone }}</td>
-                    <td>
-                        <span class="badge" [ngClass]="{
-                    'bg-success': agent.status === 'available',
-                    'bg-warning text-dark': agent.status === 'on the way',
-                    'bg-danger': agent.status === 'out of delivery'
-                }">
-                            {{ agent.status }}
-                        </span>
-                    </td>
-                    <td>{{ agent.currentOrderId || '—' }}</td>
-                    <td>{{ agent.eta }}</td>
-                    <td>
-                        <button *ngIf="agent.status === 'available'" class="btn btn-primary btn-sm"
-                            (click)="assignAgent(agent.agentId)">
-                            Assign
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
 
 
 <!--

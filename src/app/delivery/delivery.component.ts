@@ -23,12 +23,13 @@ export class DeliveryComponent implements OnInit {
     this.deliveryState.isDeliveryPageActive = false;
   }
 
-  assignAgent(agentId : string) {
-    alert('Agent ${agentId} assigned!');
-  }
-
   goBack() {
     this.deliveryState.isDeliveryPageActive = false;
     this.router.navigate(['/']);
   }
+
+  assignAgent(agentId: string): void {
+    alert(`Agent assigned with ID: ${agentId}`);
+  }
+
 }
